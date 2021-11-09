@@ -11,6 +11,7 @@ datasource db {
 model Usuario {
   id        String   @id @default(uuid()) //para gerar um id aleatório
   nome      String
+  sobrenome String
   email     String   @unique //para não permitir que tenha outro email do mesmo
   role      String   @default("USUARIO") //todo usuario criado será USUARIO
   senha     String
