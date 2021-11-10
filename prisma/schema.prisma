@@ -19,3 +19,22 @@ model Usuario {
   updatedAt DateTime @updatedAt //guarda o tempo que foi atualizado pela última vez
   createdAt DateTime @default(now()) //hora de foi criado
 }
+
+model Serie {
+  id         String   @id @default(uuid())
+  nome       String
+  imagem     String
+  temporadas DateTime
+  updatedAt  DateTime @updatedAt
+  createdAt  DateTime @default(now())
+}
+
+model Filme {
+  id        String   @id @default(uuid())
+  nome      String
+  imagem    String
+  ano       DateTime
+  duracao   DateTime
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}
